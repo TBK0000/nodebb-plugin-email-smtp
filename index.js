@@ -70,7 +70,7 @@ Emailer.admin = {
         custom_header.plugins.push({
             "route": '/emailers/local',
             "icon": 'fa-envelope-o',
-            "name": '邮件服务 (SMTP)'
+            "name": 'Mail Service (SMTP)'
         });
 
         callback(null, custom_header);
