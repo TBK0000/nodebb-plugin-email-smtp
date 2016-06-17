@@ -1,9 +1,9 @@
-<h1><i class="fa fa-envelope-o"></i> 邮件服务 (SMTP)</h1>
+<h1><i class="fa fa-envelope-o"></i> Mail Service (SMTP)</h1>
 
 <div class="row">
 	<div class="col-lg-12">
 		<blockquote>
-			通过SMTP接口发送电子邮件.
+			Send e-mail via SMTP
 		</blockquote>
 	</div>
 </div>
@@ -15,25 +15,25 @@
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="form-group">
-					<label for="emailer:local:host">域名地址 host</label>
+					<label for="emailer:local:host">Host</label>
 					<input type="text" class="form-control" id="emailer:local:host" name="emailer:local:host" />
 				</div>
 			</div>
 			<div class="col-sm-12">
 				<div class="form-group">
-					<label for="emailer:local:port">端口号</label>
+					<label for="emailer:local:port">Port</label>
 					<input type="text" class="form-control" value="25" id="emailer:local:port" name="emailer:local:port" />
 				</div>
 			</div>
 			<div class="col-sm-12">
 				<div class="form-group">
-					<label for="emailer:local:username">用户</label>
+					<label for="emailer:local:username">Username</label>
 					<input type="text" class="form-control" id="emailer:local:username" name="emailer:local:username" />
 				</div>
 			</div>
 			<div class="col-sm-12">
 				<div class="form-group">
-					<label for="emailer:local:password">密码</label>
+					<label for="emailer:local:password">Password</label>
 					<input type="password" class="form-control" id="emailer:local:password" name="emailer:local:password" />
 				</div>
 			</div>
@@ -41,13 +41,13 @@
 				<div class="form-group">
 					<label>
 						<input type="checkbox" id="emailer:local:secure" name="emailer:local:secure"/>
-						 启用安全连接
+						 Secure connection
 					</label>
 				</div>
 			</div>
 		</div>
 
-		<button class="btn btn-lg btn-primary" id="save">保存</button>
+		<button class="btn btn-lg btn-primary" id="save">Save</button>
 	</fieldset>
 </form>
 
@@ -60,8 +60,8 @@
 				app.alert({
 					alert_id: 'emailer-local',
 					type: 'info',
-					title: '设置更改',
-					message: '请重新加载应用这些更改',
+					title: 'Settings changed',
+					message: 'Please reload for these changes to take effect',
 					timeout: 5000,
 					clickfn: function() {
 						socket.emit('admin.reload');
