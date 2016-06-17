@@ -1,8 +1,8 @@
 {
     "id": "nodebb-plugin-email-smtp",
     "url": "https://github.com/nnn-li/nodebb-plugin-email-smtp",
-    "name": "发送邮件服务(SMTP)",
-    "description": "通过SMTP发送电子邮件",
+    "name": "Mail Service (SMTP)",
+    "description": "Send e-mail via SMTP",
     "library": "./index.js",
     "templates": "./templates",
     "hooks": [
